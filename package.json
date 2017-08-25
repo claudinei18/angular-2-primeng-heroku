@@ -15,17 +15,21 @@
     "_server:build": "tsc -p ./server",
     "postinstall": "npm run build"
   },
+  "styles": {
+
+  },
   "author": "Vlado Tešanović",
   "repository": {
     "url": "https://github.com/vladotesanovic/angular2-express-starter"
   },
   "private": true,
   "dependencies": {
+    "@angular/animations":"4.3.1",
     "@angular/cli": "^1.2.4",
     "@angular/common": "^4.3.1",
     "@angular/compiler": "^4.3.1",
     "@angular/compiler-cli": "^4.3.1",
-    "@angular/core": "^4.3.1",
+    "@angular/core": "^4.3.6",
     "@angular/forms": "^4.3.1",
     "@angular/http": "^4.3.1",
     "@angular/platform-browser": "^4.3.1",
@@ -52,6 +56,7 @@
     "ngrx-store-freeze": "^0.1.9",
     "normalize.css": "^5.0.0",
     "path": "^0.12.7",
+    "primeng": "^4.1.3",
     "rxjs": "^5.4.2",
     "ts-helpers": "^1.1.2",
     "ts-node": "~3.3.0",

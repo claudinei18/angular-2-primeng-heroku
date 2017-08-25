@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule, ViewChild} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -7,13 +7,16 @@ import { routes } from './dashboard.router';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
 
+import {CalendarModule} from 'primeng/primeng';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     SharedModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    CalendarModule
   ],
   declarations: [
     DashboardComponent
@@ -22,4 +25,5 @@ import { RouterModule } from '@angular/router';
     DashboardComponent
   ]
 })
-export class DashboardModule {}
+export class DashboardModule {
+}

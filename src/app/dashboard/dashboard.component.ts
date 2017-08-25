@@ -6,6 +6,8 @@ import { Observable } from 'rxjs/Observable';
 import { FEED_ADD, FEED_REMOVE, FEED_ADD_COMMENT } from '../store/feed/feed.actions';
 import { IAppState } from '../store';
 
+import { Calendar } from 'primeng/primeng';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -15,6 +17,8 @@ export class DashboardComponent {
   form: FormGroup;
 
   feeds$: Observable<{}>;
+
+  date10:Date = new Date();
 
   constructor(public fb: FormBuilder, public store: Store<IAppState>) {
 
